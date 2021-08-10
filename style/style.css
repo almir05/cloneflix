@@ -1,0 +1,118 @@
+:root {
+    --clr--red: #E50914;
+    --clr--black: #141414;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container, .container-filme {
+    margin-left: 20px;
+}
+
+.container-filme{
+    width: 70%;
+}
+
+.nav-ul {
+    flex-wrap: wrap;
+
+}
+
+header .logo {
+    color: var(--clr--red);
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a, .logo-link {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--clr--red);
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+}
+
+
+/*********************/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/baki.jpg') no-repeat;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+
+.descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: #FFF;
+    color: black;
+    border: #FFF;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 10px;
+}

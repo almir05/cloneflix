@@ -1,0 +1,52 @@
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .descricao {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .filme-principal {
+        background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/baki-2.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        margin-right: 20px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botao i {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .responsive{
+        display: none;
+    }
+
+    .fa-play{
+        position: relative;
+        left: 8px;
+    }
+
+    .fa-info-circle {
+        position: relative;
+        left: 5px;
+    }
+}
